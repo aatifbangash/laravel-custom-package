@@ -1,14 +1,13 @@
-# Contact Us Form Package
+# Laravel package example
 
-[![Issues](https://img.shields.io/github/issues/bitfumes/contact-package.svg?style=flat-square)](https://github.com/bitfumes/contact-package/issues)
-[![Stars](	https://img.shields.io/github/stars/bitfumes/contact-package.svg?style=flat-square)](https://github.com/bitfumes/contact-package/stargazers)
-
+We can create a package that will be having the common files (Models, Controllers, Migrations, Middlewares, etc) and will be included in all the microservices 
+as a composer package.
 
 ## This will send email to admin and save contact query in database
 
-## How to use it
+## How to use it in our projects (microservices)
 
-## Add the following block to you composer.json file
+## Add the following block to your composer.json file
 ```json
 "repositories": [
         {
@@ -27,3 +26,10 @@
 
 ## open the route from package in browser. You will see the output
 > http://localhost:8080/contact
+
+## For private repo
+If your repo is private then either generate token from github and add that token to your composer global config
+> composer config --global github-oauth.github.com YOUR_ACCESS_TOKEN
+
+## Or
+generate the ssh_key and add that key to your github account
