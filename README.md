@@ -27,6 +27,13 @@ as a composer package.
 ## open the route from package in browser. You will see the output
 > http://localhost:8080/contact
 
+## Middleware from custom package
+Also, I have written a middleware (MyMiddleware.php) in the package. That we can use with any route.
+```php
+Route::get('/users', function () {
+   // logic here...
+})->middleware('MyMiddleware'); //You don't need to register the MyMiddleware in the Kernal.php. It will auto-registered by the Laravel
+```
 ## For private repo
 If your repo is private then either generate token from github and add that token to your composer global config
 > composer config --global github-oauth.github.com YOUR_ACCESS_TOKEN
