@@ -54,3 +54,6 @@ You have to login to packagist.com through the github credentials. And submit yo
     }
 ```
 Add with * for the versioning. So every time we run **composer update aatifbangash/contact** after changing the code and pushing to the repo, the package in the project will be updated with the latest code.
+
+## Update package to a specific version
+Or run the following command **composer require aatifbangash/contact:0.0.3** with the tag number to upgrade the package to the specific version in the project.
