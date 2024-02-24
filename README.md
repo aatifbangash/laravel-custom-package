@@ -48,7 +48,9 @@ You have to login to packagist.com through the github credentials. And submit yo
 > git push --tags
 
 ## Add to the project
+```json
 "require": {
         "aatifbangash/contact": "*"
     }
+```
 Add with * for the versioning. So every time we run **composer update aatifbangash/contact** after changing the code and pushing to the repo, the package in the project will be updated with the latest code.
