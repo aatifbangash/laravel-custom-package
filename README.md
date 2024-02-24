@@ -40,3 +40,9 @@ If your repo is private then either generate token from github and add that toke
 
 ## Or
 generate the ssh_key and add that key to your github account
+
+## Upload to packagist
+You have to login to packagist.com through the github credentials. And submit your github repo url to packagist. Also make sure to create a release with tag (version 0.0.1) when you push your code to repo
+> git tag -a v2.1.0 -m "xyz feature is released in this tag."
+
+> git push --tags
