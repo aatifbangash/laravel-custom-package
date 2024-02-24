@@ -46,3 +46,9 @@ You have to login to packagist.com through the github credentials. And submit yo
 > git tag -a v2.1.0 -m "xyz feature is released in this tag."
 
 > git push --tags
+
+## Add to the project
+"require": {
+        "aatifbangash/contact": "*"
+    }
+Add with * for the versioning. So every time we run **composer update aatifbangash/contact** after changing the code and pushing to the repo, the package in the project will be updated with the latest code.
